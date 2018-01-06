@@ -25,6 +25,8 @@
 		2BB72A6E20016D570071CDAC /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB72A6D20016D570071CDAC /* AvatarPickerVC.swift */; };
 		2BB72A7020016F090071CDAC /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB72A6F20016F090071CDAC /* AvatarCell.swift */; };
 		2BB72A72200178FC0071CDAC /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB72A71200178FC0071CDAC /* CircleImage.swift */; };
+		2BB72A772001870F0071CDAC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB72A752001870F0071CDAC /* ProfileVC.swift */; };
+		2BB72A782001870F0071CDAC /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BB72A762001870F0071CDAC /* ProfileVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		2BB72A6D20016D570071CDAC /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		2BB72A6F20016F090071CDAC /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		2BB72A71200178FC0071CDAC /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		2BB72A752001870F0071CDAC /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		2BB72A762001870F0071CDAC /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		3524AB74369A09309B562A95 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5F6782327EB1704C080373 /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 		B1DE3805E5066D2AB79E556D /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 		2B2916591FFD0EB900036DAA /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				2BB72A792001872A0071CDAC /* XIBs */,
 				2BA40DB01FFD67050029699C /* Services */,
 				2B959D561FFD3A6A00261238 /* Utilities */,
 				2B959D4F1FFD24AE00261238 /* Model */,
@@ -129,6 +134,7 @@
 				2B959D591FFD3F3200261238 /* LoginVC.swift */,
 				2B959D5B1FFD40F700261238 /* CreateAccountVC.swift */,
 				2BB72A6D20016D570071CDAC /* AvatarPickerVC.swift */,
+				2BB72A752001870F0071CDAC /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -166,6 +172,14 @@
 				2BA40DB51FFD799E0029699C /* UserDataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		2BB72A792001872A0071CDAC /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				2BB72A762001870F0071CDAC /* ProfileVC.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 		31034B8C4DFD41FE08B009FE /* Frameworks */ = {
@@ -239,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BB72A782001870F0071CDAC /* ProfileVC.xib in Resources */,
 				2B2916651FFD0EB900036DAA /* LaunchScreen.storyboard in Resources */,
 				2B2916621FFD0EB900036DAA /* Assets.xcassets in Resources */,
 				2B2916601FFD0EB900036DAA /* Main.storyboard in Resources */,
@@ -300,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BB72A772001870F0071CDAC /* ProfileVC.swift in Sources */,
 				2B959D531FFD24DC00261238 /* ChannelVC.swift in Sources */,
 				2BB72A6E20016D570071CDAC /* AvatarPickerVC.swift in Sources */,
 				2B959D511FFD24CB00261238 /* ChatVC.swift in Sources */,
