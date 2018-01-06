@@ -436,7 +436,7 @@
                                 <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="sur-gW-cvT">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="sur-gW-cvT" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="322.5" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="2vd-88-p5E"/>
@@ -454,13 +454,19 @@
                                     <action selector="pickBGColorPressed:" destination="t9y-v7-gfe" eventType="touchUpInside" id="6bY-nw-nc5"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="iRY-0M-gs8">
+                                <rect key="frame" x="169" y="235" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="iRY-0M-gs8" firstAttribute="centerX" secondItem="HWO-Iu-fK9" secondAttribute="centerX" id="0zs-Tv-h4J"/>
                             <constraint firstItem="hJt-26-r4N" firstAttribute="centerX" secondItem="HWO-Iu-fK9" secondAttribute="centerX" id="2at-vw-Syt"/>
                             <constraint firstItem="Dyz-ZS-1dH" firstAttribute="centerX" secondItem="HWO-Iu-fK9" secondAttribute="centerX" id="6VE-8E-Kjj"/>
                             <constraint firstItem="5sg-26-8Pf" firstAttribute="top" secondItem="7Dk-DY-9xX" secondAttribute="bottom" constant="40" id="80T-an-Sjo"/>
                             <constraint firstItem="l28-Z0-885" firstAttribute="top" secondItem="sur-gW-cvT" secondAttribute="top" id="Blj-Fo-A5t"/>
+                            <constraint firstItem="iRY-0M-gs8" firstAttribute="centerY" secondItem="HWO-Iu-fK9" secondAttribute="centerY" constant="-80" id="CwG-2E-Fu7"/>
                             <constraint firstItem="RPn-yV-0jp" firstAttribute="trailing" secondItem="HWO-Iu-fK9" secondAttribute="trailingMargin" id="DgB-fI-uq7"/>
                             <constraint firstItem="l28-Z0-885" firstAttribute="centerX" secondItem="HWO-Iu-fK9" secondAttribute="centerX" id="JWW-Ch-GrN"/>
                             <constraint firstItem="OAR-b9-yVH" firstAttribute="top" secondItem="Nz3-Q1-mw9" secondAttribute="bottom" constant="20" id="LIu-aM-HeW"/>
@@ -477,6 +483,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="gis-jp-2cf" id="Z7u-jD-YA9"/>
                         <outlet property="passTxt" destination="YN0-rC-dJg" id="9v6-Or-W9m"/>
+                        <outlet property="spinner" destination="iRY-0M-gs8" id="HVH-d7-1Ja"/>
                         <outlet property="userImg" destination="sur-gW-cvT" id="JXr-Q8-sls"/>
                         <outlet property="usernameTxt" destination="VPr-Vi-UUW" id="CfO-OC-myf"/>
                         <segue destination="wND-4L-Yld" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="O1L-P9-OWz"/>
@@ -542,7 +549,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AEV-08-Hhr">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AEV-08-Hhr" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
                                                     <rect key="frame" x="18" y="18" width="64" height="64"/>
                                                 </imageView>
                                             </subviews>
