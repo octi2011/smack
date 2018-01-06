@@ -132,7 +132,7 @@
                                 <rect key="frame" x="281" y="87.5" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="du3-Jr-bKE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="du3-Jr-bKE" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="16" y="572" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="Adb-IM-JzP"/>
@@ -187,6 +187,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="HqY-gK-5J9" id="86I-b0-Q25"/>
+                        <outlet property="userImage" destination="du3-Jr-bKE" id="29T-dj-diE"/>
                         <segue destination="Dxb-i8-e5h" kind="show" identifier="toLogin" id="S6s-1v-wjw"/>
                     </connections>
                 </viewController>
