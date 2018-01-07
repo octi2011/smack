@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		16247E59EF8B9A45374E0972 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3524AB74369A09309B562A95 /* Pods_Smack.framework */; };
 		2B1284182002B74500D0D029 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1284172002B74500D0D029 /* Message.swift */; };
+		2B12841A2002BEC100D0D029 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1284192002BEC100D0D029 /* KeyboardBoundView.swift */; };
 		2B29165B1FFD0EB900036DAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B29165A1FFD0EB900036DAA /* AppDelegate.swift */; };
 		2B2916601FFD0EB900036DAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B29165E1FFD0EB900036DAA /* Main.storyboard */; };
 		2B2916621FFD0EB900036DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2916611FFD0EB900036DAA /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		2B1284172002B74500D0D029 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		2B1284192002BEC100D0D029 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		2B2916571FFD0EB900036DAA /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B29165A1FFD0EB900036DAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B29165F1FFD0EB900036DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 		2B959D4E1FFD24A600261238 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2B1284192002BEC100D0D029 /* KeyboardBoundView.swift */,
 				2B959D541FFD299800261238 /* GradientView.swift */,
 				2BA40DB31FFD71110029699C /* RoundedBtn.swift */,
 				2BB72A6F20016F090071CDAC /* AvatarCell.swift */,
@@ -337,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B12841A2002BEC100D0D029 /* KeyboardBoundView.swift in Sources */,
 				2BDBF583200290AB00756ADC /* SocketService.swift in Sources */,
 				2BB72A772001870F0071CDAC /* ProfileVC.swift in Sources */,
 				2BDBF57D20027C6500756ADC /* ChannelCell.swift in Sources */,
