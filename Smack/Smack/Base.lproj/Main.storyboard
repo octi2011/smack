@@ -161,10 +161,17 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOU-nl-RpF">
+                                <rect key="frame" x="8" y="624" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9OR-2M-ocb" firstAttribute="top" secondItem="0Ex-8v-fPo" secondAttribute="bottom" id="4rg-22-aWM"/>
+                            <constraint firstItem="0Ex-8v-fPo" firstAttribute="top" secondItem="YOU-nl-RpF" secondAttribute="bottom" constant="3" id="8C0-KS-KLV"/>
                             <constraint firstItem="FYL-Gv-vYB" firstAttribute="top" secondItem="Iq3-ZR-NNX" secondAttribute="bottom" id="99b-YT-86x"/>
                             <constraint firstItem="hfe-jU-7gi" firstAttribute="leading" secondItem="F9W-22-W0g" secondAttribute="leading" id="FyG-44-Fvd"/>
                             <constraint firstAttribute="trailing" secondItem="hfe-jU-7gi" secondAttribute="trailing" id="G0n-wr-T3s"/>
@@ -176,6 +183,7 @@
                             <constraint firstItem="FYL-Gv-vYB" firstAttribute="leading" secondItem="F9W-22-W0g" secondAttribute="leading" id="XfO-Xu-baz"/>
                             <constraint firstItem="0Ex-8v-fPo" firstAttribute="leading" secondItem="F9W-22-W0g" secondAttribute="leading" id="b9r-tp-y0L"/>
                             <constraint firstAttribute="trailing" secondItem="FYL-Gv-vYB" secondAttribute="trailing" id="zQn-RQ-m1E"/>
+                            <constraint firstItem="YOU-nl-RpF" firstAttribute="leading" secondItem="F9W-22-W0g" secondAttribute="leading" constant="8" id="zjj-u5-m2r"/>
                         </constraints>
                     </view>
                     <connections>
@@ -184,6 +192,7 @@
                         <outlet property="messageTextBox" destination="0Ex-8v-fPo" id="1M1-Ya-g84"/>
                         <outlet property="sendBtn" destination="CcK-LO-9nr" id="LmE-Gp-8ea"/>
                         <outlet property="tableView" destination="hfe-jU-7gi" id="qNt-Kg-6T1"/>
+                        <outlet property="typingLbl" destination="YOU-nl-RpF" id="Sj7-9Z-Bpz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tzI-bO-GB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
