@@ -26,6 +26,7 @@ class AuthService {
         }
     }
     
+    //or as? String ?? "" for multiple devices
     var authToken: String {
         get {
             return defaults.value(forKey: TOKEN_KEY) as! String
