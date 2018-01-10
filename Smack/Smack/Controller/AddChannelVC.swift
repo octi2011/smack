@@ -41,6 +41,13 @@ class AddChannelVC: UIViewController {
         name.attributedPlaceholder = NSAttributedString(string: "name", attributes: [NSAttributedStringKey.foregroundColor : smackPurplePlaceHolder])
         chanDescription.attributedPlaceholder = NSAttributedString(string: "description", attributes: [NSAttributedStringKey.foregroundColor : smackPurplePlaceHolder])
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(AddChannelVC.handleTap))
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func handleTap() {
+        view.endEditing(true)
     }
     
     @objc func closeTap(_ recognizer: UITapGestureRecognizer) {
