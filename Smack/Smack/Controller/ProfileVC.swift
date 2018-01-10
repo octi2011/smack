@@ -43,4 +43,9 @@ class ProfileVC: UIViewController {
     @objc func closeTap(_ recognizer: UITapGestureRecognizer) {
         dismiss(animated: true, completion: nil)
     }
+    @IBAction func displayMapPressed(_ sender: Any) {
+        let map = MapVC()
+        map.modalPresentationStyle = .custom
+        present(map, animated: true, completion: nil)
+    }
 }
