@@ -11,6 +11,7 @@ import UIKit
 class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     //Outlets
+    @IBOutlet weak var chartBtn: UIButton!
     @IBOutlet weak var menuBtn: UIButton!
     @IBOutlet weak var channelNameLbl: UILabel!
     @IBOutlet weak var tableView: UITableView!
@@ -26,6 +27,12 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         view.bindToKeyboard()
         tableView.delegate = self
         tableView.dataSource = self
+
+        if !AuthService.instance.isLoggedIn {
+            chartBtn.isHidden = false
+            chartBtn.isEnabled = true
+        }
+            
         
         tableView.estimatedRowHeight = 80
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -128,8 +135,12 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         if AuthService.instance.isLoggedIn {
             // get channels
             onLoginGetMessages()
+            chartBtn.isEnabled = true
+            chartBtn.isHidden = false
         } else {
             channelNameLbl.text = "Please Log In"
+            chartBtn.isEnabled = false
+            chartBtn.isHidden = true
             tableView.reloadData()
         }
     }

@@ -201,6 +201,7 @@
                     </view>
                     <connections>
                         <outlet property="channelNameLbl" destination="hlL-6l-bky" id="llo-bn-jCe"/>
+                        <outlet property="chartBtn" destination="sdC-OF-fMO" id="jPg-8C-fg9"/>
                         <outlet property="menuBtn" destination="RX2-yn-Xzp" id="6XY-Wd-J6q"/>
                         <outlet property="messageTextBox" destination="0Ex-8v-fPo" id="1M1-Ya-g84"/>
                         <outlet property="sendBtn" destination="CcK-LO-9nr" id="LmE-Gp-8ea"/>
