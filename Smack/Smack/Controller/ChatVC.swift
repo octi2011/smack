@@ -187,4 +187,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             isTyping = true
         }
     }
+    @IBAction func charBtnPressed(_ sender: Any) {
+        
+    }
 }
