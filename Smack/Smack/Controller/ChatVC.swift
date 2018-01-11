@@ -188,6 +188,10 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     @IBAction func charBtnPressed(_ sender: Any) {
-        
+        if AuthService.instance.isLoggedIn {
+            let chartVC = ChartVC()
+            chartVC.modalPresentationStyle = .custom
+            present(chartVC, animated: true, completion: nil)
+        }
     }
 }

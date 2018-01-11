@@ -15,8 +15,8 @@
 		2B2916601FFD0EB900036DAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B29165E1FFD0EB900036DAA /* Main.storyboard */; };
 		2B2916621FFD0EB900036DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2916611FFD0EB900036DAA /* Assets.xcassets */; };
 		2B2916651FFD0EB900036DAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B2916631FFD0EB900036DAA /* LaunchScreen.storyboard */; };
-		2B53A7F620078EDF000D88BA /* ChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53A7F420078EDF000D88BA /* ChartController.swift */; };
-		2B53A7F720078EDF000D88BA /* ChartController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B53A7F520078EDF000D88BA /* ChartController.xib */; };
+		2B53A7FA200793D9000D88BA /* ChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53A7F8200793D9000D88BA /* ChartVC.swift */; };
+		2B53A7FB200793D9000D88BA /* ChartVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B53A7F9200793D9000D88BA /* ChartVC.xib */; };
 		2B959D4C1FFD20BC00261238 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B959D4A1FFD20BC00261238 /* SWRevealViewController.m */; };
 		2B959D511FFD24CB00261238 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B959D501FFD24CB00261238 /* ChatVC.swift */; };
 		2B959D531FFD24DC00261238 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B959D521FFD24DC00261238 /* ChannelVC.swift */; };
@@ -52,8 +52,8 @@
 		2B2916611FFD0EB900036DAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B2916641FFD0EB900036DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B2916661FFD0EB900036DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B53A7F420078EDF000D88BA /* ChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartController.swift; sourceTree = "<group>"; };
-		2B53A7F520078EDF000D88BA /* ChartController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartController.xib; sourceTree = "<group>"; };
+		2B53A7F8200793D9000D88BA /* ChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartVC.swift; sourceTree = "<group>"; };
+		2B53A7F9200793D9000D88BA /* ChartVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartVC.xib; sourceTree = "<group>"; };
 		2B959D491FFD20BB00261238 /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		2B959D4A1FFD20BC00261238 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		2B959D4B1FFD20BC00261238 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 				2BB72A752001870F0071CDAC /* ProfileVC.swift */,
 				2BDBF57E2002862000756ADC /* AddChannelVC.swift */,
 				2BAE948720063A5100E061A4 /* MapVC.swift */,
-				2B53A7F420078EDF000D88BA /* ChartController.swift */,
+				2B53A7F8200793D9000D88BA /* ChartVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -213,7 +213,7 @@
 		2BB72A792001872A0071CDAC /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
-				2B53A7F520078EDF000D88BA /* ChartController.xib */,
+				2B53A7F9200793D9000D88BA /* ChartVC.xib */,
 				2BAE948820063A5100E061A4 /* MapVC.xib */,
 				2BB72A762001870F0071CDAC /* ProfileVC.xib */,
 				2BDBF57F2002862000756ADC /* AddChannelVC.xib */,
@@ -293,8 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BDBF5812002862000756ADC /* AddChannelVC.xib in Resources */,
+				2B53A7FB200793D9000D88BA /* ChartVC.xib in Resources */,
 				2BAE948A20063A5100E061A4 /* MapVC.xib in Resources */,
-				2B53A7F720078EDF000D88BA /* ChartController.xib in Resources */,
 				2BB72A782001870F0071CDAC /* ProfileVC.xib in Resources */,
 				2B2916651FFD0EB900036DAA /* LaunchScreen.storyboard in Resources */,
 				2B2916621FFD0EB900036DAA /* Assets.xcassets in Resources */,
@@ -376,11 +376,11 @@
 				2BB72A772001870F0071CDAC /* ProfileVC.swift in Sources */,
 				2BDBF57D20027C6500756ADC /* ChannelCell.swift in Sources */,
 				2B959D531FFD24DC00261238 /* ChannelVC.swift in Sources */,
-				2B53A7F620078EDF000D88BA /* ChartController.swift in Sources */,
 				2BB72A6E20016D570071CDAC /* AvatarPickerVC.swift in Sources */,
 				2B12841C2002C16D00D0D029 /* MessageCell.swift in Sources */,
 				2B959D511FFD24CB00261238 /* ChatVC.swift in Sources */,
 				2B1284182002B74500D0D029 /* Message.swift in Sources */,
+				2B53A7FA200793D9000D88BA /* ChartVC.swift in Sources */,
 				2BDBF57B200274B300756ADC /* Channel.swift in Sources */,
 				2BB72A72200178FC0071CDAC /* CircleImage.swift in Sources */,
 				2BDBF5792002744A00756ADC /* MessageService.swift in Sources */,
