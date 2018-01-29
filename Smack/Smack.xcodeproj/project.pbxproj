@@ -8,25 +8,77 @@
 
 /* Begin PBXBuildFile section */
 		16247E59EF8B9A45374E0972 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3524AB74369A09309B562A95 /* Pods_Smack.framework */; };
+		2B1284182002B74500D0D029 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1284172002B74500D0D029 /* Message.swift */; };
+		2B12841A2002BEC100D0D029 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1284192002BEC100D0D029 /* KeyboardBoundView.swift */; };
+		2B12841C2002C16D00D0D029 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B12841B2002C16D00D0D029 /* MessageCell.swift */; };
 		2B29165B1FFD0EB900036DAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B29165A1FFD0EB900036DAA /* AppDelegate.swift */; };
-		2B29165D1FFD0EB900036DAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B29165C1FFD0EB900036DAA /* ViewController.swift */; };
 		2B2916601FFD0EB900036DAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B29165E1FFD0EB900036DAA /* Main.storyboard */; };
 		2B2916621FFD0EB900036DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2916611FFD0EB900036DAA /* Assets.xcassets */; };
 		2B2916651FFD0EB900036DAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B2916631FFD0EB900036DAA /* LaunchScreen.storyboard */; };
+		2B53A7FA200793D9000D88BA /* ChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53A7F8200793D9000D88BA /* ChartVC.swift */; };
+		2B53A7FB200793D9000D88BA /* ChartVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B53A7F9200793D9000D88BA /* ChartVC.xib */; };
 		2B959D4C1FFD20BC00261238 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B959D4A1FFD20BC00261238 /* SWRevealViewController.m */; };
+		2B959D511FFD24CB00261238 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B959D501FFD24CB00261238 /* ChatVC.swift */; };
+		2B959D531FFD24DC00261238 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B959D521FFD24DC00261238 /* ChannelVC.swift */; };
+		2B959D551FFD299800261238 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B959D541FFD299800261238 /* GradientView.swift */; };
+		2B959D581FFD3A7F00261238 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B959D571FFD3A7F00261238 /* Constants.swift */; };
+		2B959D5A1FFD3F3200261238 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B959D591FFD3F3200261238 /* LoginVC.swift */; };
+		2B959D5C1FFD40F700261238 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B959D5B1FFD40F700261238 /* CreateAccountVC.swift */; };
+		2BA40DB21FFD671A0029699C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA40DB11FFD671A0029699C /* AuthService.swift */; };
+		2BA40DB41FFD71110029699C /* RoundedBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA40DB31FFD71110029699C /* RoundedBtn.swift */; };
+		2BA40DB61FFD799E0029699C /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA40DB51FFD799E0029699C /* UserDataService.swift */; };
+		2BAE948920063A5100E061A4 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAE948720063A5100E061A4 /* MapVC.swift */; };
+		2BAE948A20063A5100E061A4 /* MapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BAE948820063A5100E061A4 /* MapVC.xib */; };
+		2BB72A6E20016D570071CDAC /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB72A6D20016D570071CDAC /* AvatarPickerVC.swift */; };
+		2BB72A7020016F090071CDAC /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB72A6F20016F090071CDAC /* AvatarCell.swift */; };
+		2BB72A72200178FC0071CDAC /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB72A71200178FC0071CDAC /* CircleImage.swift */; };
+		2BB72A772001870F0071CDAC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB72A752001870F0071CDAC /* ProfileVC.swift */; };
+		2BB72A782001870F0071CDAC /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BB72A762001870F0071CDAC /* ProfileVC.xib */; };
+		2BDBF5792002744A00756ADC /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDBF5782002744A00756ADC /* MessageService.swift */; };
+		2BDBF57B200274B300756ADC /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDBF57A200274B300756ADC /* Channel.swift */; };
+		2BDBF57D20027C6500756ADC /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDBF57C20027C6500756ADC /* ChannelCell.swift */; };
+		2BDBF5802002862000756ADC /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDBF57E2002862000756ADC /* AddChannelVC.swift */; };
+		2BDBF5812002862000756ADC /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBF57F2002862000756ADC /* AddChannelVC.xib */; };
+		2BDBF583200290AB00756ADC /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDBF582200290AB00756ADC /* SocketService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B1284172002B74500D0D029 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		2B1284192002BEC100D0D029 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		2B12841B2002C16D00D0D029 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		2B2916571FFD0EB900036DAA /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B29165A1FFD0EB900036DAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B29165C1FFD0EB900036DAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B29165F1FFD0EB900036DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B2916611FFD0EB900036DAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B2916641FFD0EB900036DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B2916661FFD0EB900036DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B53A7F8200793D9000D88BA /* ChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartVC.swift; sourceTree = "<group>"; };
+		2B53A7F9200793D9000D88BA /* ChartVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartVC.xib; sourceTree = "<group>"; };
 		2B959D491FFD20BB00261238 /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		2B959D4A1FFD20BC00261238 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		2B959D4B1FFD20BC00261238 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		2B959D501FFD24CB00261238 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		2B959D521FFD24DC00261238 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		2B959D541FFD299800261238 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		2B959D571FFD3A7F00261238 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2B959D591FFD3F3200261238 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		2B959D5B1FFD40F700261238 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		2BA40DB11FFD671A0029699C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		2BA40DB31FFD71110029699C /* RoundedBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBtn.swift; sourceTree = "<group>"; };
+		2BA40DB51FFD799E0029699C /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		2BAE948720063A5100E061A4 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		2BAE948820063A5100E061A4 /* MapVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapVC.xib; sourceTree = "<group>"; };
+		2BB72A6D20016D570071CDAC /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
+		2BB72A6F20016F090071CDAC /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		2BB72A71200178FC0071CDAC /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		2BB72A752001870F0071CDAC /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		2BB72A762001870F0071CDAC /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		2BDBF5782002744A00756ADC /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		2BDBF57A200274B300756ADC /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		2BDBF57C20027C6500756ADC /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
+		2BDBF57E2002862000756ADC /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
+		2BDBF57F2002862000756ADC /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
+		2BDBF582200290AB00756ADC /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		3524AB74369A09309B562A95 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5F6782327EB1704C080373 /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 		B1DE3805E5066D2AB79E556D /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,9 +126,14 @@
 		2B2916591FFD0EB900036DAA /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				2BB72A792001872A0071CDAC /* XIBs */,
+				2BA40DB01FFD67050029699C /* Services */,
+				2B959D561FFD3A6A00261238 /* Utilities */,
+				2B959D4F1FFD24AE00261238 /* Model */,
+				2B959D4E1FFD24A600261238 /* View */,
+				2B959D4D1FFD249D00261238 /* Controller */,
 				2B959D481FFD204200261238 /* Supporting Files */,
 				2B29165A1FFD0EB900036DAA /* AppDelegate.swift */,
-				2B29165C1FFD0EB900036DAA /* ViewController.swift */,
 				2B29165E1FFD0EB900036DAA /* Main.storyboard */,
 				2B2916611FFD0EB900036DAA /* Assets.xcassets */,
 				2B2916631FFD0EB900036DAA /* LaunchScreen.storyboard */,
@@ -93,6 +150,75 @@
 				2B959D491FFD20BB00261238 /* Smack-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B959D4D1FFD249D00261238 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2B959D501FFD24CB00261238 /* ChatVC.swift */,
+				2B959D521FFD24DC00261238 /* ChannelVC.swift */,
+				2B959D591FFD3F3200261238 /* LoginVC.swift */,
+				2B959D5B1FFD40F700261238 /* CreateAccountVC.swift */,
+				2BB72A6D20016D570071CDAC /* AvatarPickerVC.swift */,
+				2BB72A752001870F0071CDAC /* ProfileVC.swift */,
+				2BDBF57E2002862000756ADC /* AddChannelVC.swift */,
+				2BAE948720063A5100E061A4 /* MapVC.swift */,
+				2B53A7F8200793D9000D88BA /* ChartVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2B959D4E1FFD24A600261238 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B1284192002BEC100D0D029 /* KeyboardBoundView.swift */,
+				2B959D541FFD299800261238 /* GradientView.swift */,
+				2BA40DB31FFD71110029699C /* RoundedBtn.swift */,
+				2BB72A6F20016F090071CDAC /* AvatarCell.swift */,
+				2BB72A71200178FC0071CDAC /* CircleImage.swift */,
+				2BDBF57C20027C6500756ADC /* ChannelCell.swift */,
+				2B12841B2002C16D00D0D029 /* MessageCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B959D4F1FFD24AE00261238 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BDBF57A200274B300756ADC /* Channel.swift */,
+				2B1284172002B74500D0D029 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B959D561FFD3A6A00261238 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2B959D571FFD3A7F00261238 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2BA40DB01FFD67050029699C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2BA40DB11FFD671A0029699C /* AuthService.swift */,
+				2BA40DB51FFD799E0029699C /* UserDataService.swift */,
+				2BDBF5782002744A00756ADC /* MessageService.swift */,
+				2BDBF582200290AB00756ADC /* SocketService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2BB72A792001872A0071CDAC /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				2B53A7F9200793D9000D88BA /* ChartVC.xib */,
+				2BAE948820063A5100E061A4 /* MapVC.xib */,
+				2BB72A762001870F0071CDAC /* ProfileVC.xib */,
+				2BDBF57F2002862000756ADC /* AddChannelVC.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 		31034B8C4DFD41FE08B009FE /* Frameworks */ = {
@@ -166,6 +292,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BDBF5812002862000756ADC /* AddChannelVC.xib in Resources */,
+				2B53A7FB200793D9000D88BA /* ChartVC.xib in Resources */,
+				2BAE948A20063A5100E061A4 /* MapVC.xib in Resources */,
+				2BB72A782001870F0071CDAC /* ProfileVC.xib in Resources */,
 				2B2916651FFD0EB900036DAA /* LaunchScreen.storyboard in Resources */,
 				2B2916621FFD0EB900036DAA /* Assets.xcassets in Resources */,
 				2B2916601FFD0EB900036DAA /* Main.storyboard in Resources */,
@@ -181,13 +311,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smack-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D77BE6C07E8973A9CB18E0F8 /* [CP] Embed Pods Frameworks */ = {
@@ -196,9 +329,20 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Smack/Pods-Smack-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -227,9 +371,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B29165D1FFD0EB900036DAA /* ViewController.swift in Sources */,
+				2B12841A2002BEC100D0D029 /* KeyboardBoundView.swift in Sources */,
+				2BDBF583200290AB00756ADC /* SocketService.swift in Sources */,
+				2BB72A772001870F0071CDAC /* ProfileVC.swift in Sources */,
+				2BDBF57D20027C6500756ADC /* ChannelCell.swift in Sources */,
+				2B959D531FFD24DC00261238 /* ChannelVC.swift in Sources */,
+				2BB72A6E20016D570071CDAC /* AvatarPickerVC.swift in Sources */,
+				2B12841C2002C16D00D0D029 /* MessageCell.swift in Sources */,
+				2B959D511FFD24CB00261238 /* ChatVC.swift in Sources */,
+				2B1284182002B74500D0D029 /* Message.swift in Sources */,
+				2B53A7FA200793D9000D88BA /* ChartVC.swift in Sources */,
+				2BDBF57B200274B300756ADC /* Channel.swift in Sources */,
+				2BB72A72200178FC0071CDAC /* CircleImage.swift in Sources */,
+				2BDBF5792002744A00756ADC /* MessageService.swift in Sources */,
+				2BA40DB41FFD71110029699C /* RoundedBtn.swift in Sources */,
+				2BAE948920063A5100E061A4 /* MapVC.swift in Sources */,
+				2BA40DB61FFD799E0029699C /* UserDataService.swift in Sources */,
+				2B959D5C1FFD40F700261238 /* CreateAccountVC.swift in Sources */,
+				2BA40DB21FFD671A0029699C /* AuthService.swift in Sources */,
+				2B959D5A1FFD3F3200261238 /* LoginVC.swift in Sources */,
+				2BDBF5802002862000756ADC /* AddChannelVC.swift in Sources */,
+				2B959D551FFD299800261238 /* GradientView.swift in Sources */,
+				2BB72A7020016F090071CDAC /* AvatarCell.swift in Sources */,
 				2B29165B1FFD0EB900036DAA /* AppDelegate.swift in Sources */,
 				2B959D4C1FFD20BC00261238 /* SWRevealViewController.m in Sources */,
+				2B959D581FFD3A7F00261238 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +535,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PX5AU8YC45;
 				INFOPLIST_FILE = Smack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.octavian.Smack;
@@ -387,6 +554,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PX5AU8YC45;
 				INFOPLIST_FILE = Smack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.octavian.Smack;
